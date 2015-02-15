@@ -1,0 +1,48 @@
+{
+  "name": "glsl-smooth-min",
+  "version": "1.0.0",
+  "description": "Smooth minimum functions for GLSL",
+  "main": "poly.glsl",
+  "license": "MIT",
+  "scripts": {
+    "start": "wzrd demo/index.js:bundle.js",
+    "bundle": "browserify demo/index.js -o bundle.js"
+  },
+  "author": {
+    "name": "Hugh Kennedy",
+    "email": "hughskennedy@gmail.com",
+    "url": "http://hughsk.io/"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "browserify": "^8.1.3",
+    "gl-toy": "^1.0.0",
+    "glsl-square-frame": "^1.0.1",
+    "glslify": "^1.6.0",
+    "wzrd": "^1.2.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/stackgl/glsl-smooth-min.git"
+  },
+  "keywords": [
+    "ecosystem:stackgl",
+    "smin",
+    "smoothmin",
+    "smooth minimum",
+    "min",
+    "raymarch",
+    "raytrace",
+    "glsl",
+    "shader"
+  ],
+  "homepage": "https://github.com/stackgl/glsl-smooth-min",
+  "bugs": {
+    "url": "https://github.com/stackgl/glsl-smooth-min/issues"
+  },
+  "browserify": {
+    "transform": [
+      "glslify"
+    ]
+  }
+}
